@@ -1,0 +1,122 @@
+* {
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   background-color:hsl(204, 43%, 93%);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   padding: 15px;
+}
+
+.main-container{
+   width:50%;
+   height: 50vh;
+   border-radius: 5px;
+   box-shadow: 1px 3px 15px -4px rgba(0,0,0,0.75);
+-webkit-box-shadow: 1px 3px 15px -4px rgba(0,0,0,0.75);
+-moz-box-shadow: 1px 3px 15px -4px rgba(0,0,0,0.75);
+}
+.first-child{
+   background-color: rgb(244, 248, 252);
+   max-width: 100%;
+   padding:27px;
+
+
+}
+.first-child > h3 {
+   color:hsl(156, 46%, 34%);
+   margin-bottom: 20px;
+}
+.first-child > h4 {
+   color: hsl(71, 73%, 54%);
+   margin-bottom: 13px;
+}
+.first-child > h5 {
+   line-height: 15px;
+   width:80%;
+   color: hsl(218, 22%, 67%);
+}
+.second-child{
+height:161px;
+width: 100%;
+display: flex;
+color: white;
+box-shadow: 1px 3px 15px -5px rgba(0,0,0,0.53);
+-webkit-box-shadow: 1px 3px 15px -5px rgba(0,0,0,0.53);
+-moz-box-shadow: 1px 3px 15px -5px rgba(0,0,0,0.53);
+}
+.monthly-subscription{
+   background-color:  hsl(179, 62%, 43%);
+   padding: 27px;
+   width: 50%;
+}
+.monthly-subscription > h4{
+   margin-bottom: 10px;
+   font-weight: 400;
+}
+.monthly-subscription > div {
+   display:flex;
+   align-items: baseline;
+   gap:4px;
+   margin-bottom: 5px;
+}
+.monthly-subscription > h5 {
+   margin-bottom: 10px;
+   font-weight: 400;
+   color: hsl(218, 22%, 67%);
+}
+
+button{
+   padding: 4px 70px;
+   border-radius: 5px;
+   box-shadow: 1px 3px 31px -18px rgba(0,0,0,0.53);
+   -webkit-box-shadow: 1px 3px 31px -18px rgba(0,0,0,0.53);
+   -moz-box-shadow: 1px 3px 31px -18px rgba(0,0,0,0.53);
+border-color:  hsl(71, 73%, 54%);
+background-color:  hsl(71, 73%, 54%);
+   color: white;
+}
+.why-us{
+   background-color: hsl(179, 68%, 32%);
+   width:50%;
+   padding:27px;
+   font-weight: 400;
+}
+.why-us > h4{
+   margin-bottom: 10px;
+   font-family: 'Karla', sans-serif;
+   font-weight: 400;
+}
+
+@media only screen and (max-width: 500px){
+ .first-child{
+   background-color: rgb(244, 248, 252);
+   max-width: 100%;
+   padding:27px; 
+   /* height: 35%; */
+}
+
+   .second-child {
+      display: flex;
+      flex-direction: column;
+   align-content: center;
+
+   }
+
+   .main-container {
+      width: 70%;
+   }
+
+   .monthly-subscription {
+      width: 80%;
+      height: 100px;
+   }
+
+   .why-us {
+      width: 80%;
+   }
+}
